@@ -1,0 +1,305 @@
+import turtle
+import random
+
+print("Welcome to the flag drawing tool")
+
+wn = turtle.Screen()
+cruz = turtle.Turtle()
+cruz.speed(0)
+cruz.pencolor("black")
+cruz.hideturtle()
+cruz.ht()
+
+def OUTLINE():
+    cruz.penup()
+    cruz.goto(-200,200)
+    cruz.pendown()
+    cruz.forward(450)
+    cruz.right(90)
+    cruz.forward(300)
+    cruz.right(90)
+    cruz.forward(450)
+    cruz.right(90)
+    cruz.forward(300)
+
+def monaco():
+    cruz.right(90)
+    cruz.fillcolor('red')
+    cruz.begin_fill()
+    for i in range(1):
+      cruz.forward(450)
+      cruz.right(90)
+      cruz.forward(150)
+      cruz.right(90)
+      cruz.forward(450)
+    cruz.end_fill()
+
+    print ("This is the flag of Monaco")
+
+
+
+def germany():
+    cruz.right(90)
+    cruz.fillcolor('black')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(100)
+        cruz.right(90)
+        cruz.forward(450)
+    cruz.end_fill()
+    cruz.right(180)
+    cruz.fillcolor('red')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(100)
+        cruz.right(90)
+        cruz.forward(450)
+    cruz.end_fill()
+    cruz.right(180)
+    cruz.fillcolor('gold')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(100)
+        cruz.right(90)
+        cruz.forward(450)
+    cruz.end_fill()
+    cruz.right(90)
+    cruz.pencolor('black')
+    cruz.forward(300)
+    cruz.right(90)
+    cruz.forward(450)
+    
+ 
+
+    print ("This is the German flag")
+
+def russia():
+    cruz.right(90)
+    cruz.fillcolor('white')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(100)
+        cruz.right(90)
+        cruz.forward(450)
+    cruz.end_fill()
+    cruz.right(180)
+    cruz.fillcolor('blue')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(100)
+        cruz.right(90)
+        cruz.forward(450)
+    cruz.end_fill()
+    cruz.right(180)
+    cruz.fillcolor('red')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(100)
+        cruz.right(90)
+        cruz.forward(450)
+    cruz.end_fill()
+    cruz.right(90)
+    cruz.pencolor('black')
+    cruz.forward(300)
+    cruz.right(90)
+    cruz.forward(450)
+    cruz.right(90)
+    cruz.forward(300)
+    
+ 
+
+    print ("This is the Russian flag")
+
+def netherlands():
+    cruz.right(90)
+    cruz.fillcolor('red')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(100)
+        cruz.right(90)
+        cruz.forward(450)
+    cruz.end_fill()
+    cruz.right(180)
+    cruz.fillcolor('white')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(100)
+        cruz.right(90)
+        cruz.forward(450)
+    cruz.end_fill()
+    cruz.right(180)
+    cruz.fillcolor('blue')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(100)
+        cruz.right(90)
+        cruz.forward(450)
+    cruz.end_fill()
+    cruz.right(90)
+    cruz.pencolor('black')
+    cruz.forward(300)
+    cruz.right(90)
+    cruz.forward(450)
+    cruz.right(90)
+    cruz.forward(300)
+    
+ 
+
+    print ("This is the Flag of the Netherlands")
+
+
+def france():
+    cruz.right(90)
+    cruz.penup()
+    cruz.fillcolor('blue')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(150)
+        cruz.right(90)
+        cruz.forward(300)
+        cruz.right(90)
+        cruz.forward(150)
+    cruz.end_fill()
+    cruz.right(180)
+    cruz.forward(150)
+    cruz.fillcolor('white')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(150)
+        cruz.left(90)
+        cruz.forward(300)
+        cruz.left(90)
+        cruz.pendown()
+        cruz.forward(150)
+    cruz.end_fill()
+    cruz.right(180)
+    cruz.forward(150)
+    cruz.fillcolor('red')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(150)
+        cruz.right(90)
+        cruz.forward(300)
+        cruz.right(90)
+        cruz.forward(150)
+    cruz.end_fill()
+
+
+
+    print("This is the French flag")
+
+def peurtorico():
+    cruz.right(90)
+    for i in range (3):
+        cruz.fillcolor('red')
+        cruz.begin_fill()
+        cruz.forward(450)
+        cruz.right(90)
+        cruz.forward(60)
+        cruz.right(90)
+        cruz.forward(450)
+        cruz.end_fill()
+        cruz.penup()
+        cruz.left(90)
+        cruz.forward(60)
+        cruz.left(90)
+    cruz.goto(-200,200)
+    cruz.fillcolor('medium blue')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.right(90)
+        cruz.forward(150)
+        cruz.left(90)
+        cruz.forward(220)
+    cruz.end_fill()
+    cruz.right(180)
+    cruz.fillcolor('medium blue')
+    cruz.begin_fill()
+    for i in range(1):
+        cruz.forward(220)
+        cruz.left(90)
+        cruz.forward(150)
+    cruz.end_fill()
+    cruz.right(270)
+    cruz.goto(-180,72.5)
+    cruz.fillcolor('white')
+    cruz.begin_fill()
+    cruz.penup()
+    for i in range(5):
+        cruz.forward(120)
+        cruz.right(144)
+    cruz.end_fill()
+
+
+
+    print ("This is the Puerto Rican flag")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+flaginput = input("Enter a number from the flag list below \n1  --  Monaco \n2  --  Germany \n3  --  Russia \n4  --  Netherlands \n5  --  France \n6  --  Puerto Rico \n")
+
+
+if flaginput == "1":
+    OUTLINE ()
+    monaco ()
+
+elif flaginput == "2":
+    OUTLINE ()
+    germany ()
+
+elif flaginput == "3":
+    OUTLINE ()
+    russia ()
+
+elif flaginput == "4":
+    OUTLINE ()
+    netherlands ()
+
+elif flaginput == "5":
+    OUTLINE ()
+    france ()
+
+elif flaginput ==  "6":
+    OUTLINE ()
+    peurtorico ()
+
+
+
+
+
+
+
+
