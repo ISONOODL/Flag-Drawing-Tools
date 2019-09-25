@@ -1,0 +1,360 @@
+import turtle
+import time
+import random
+import os
+import sys
+
+wn = turtle.Screen()
+wn.bgcolor("white")
+
+b = turtle.Turtle()
+b.pencolor("black")
+b.speed(0)
+
+def outline():
+    b.penup()
+    b.goto(-300,-200)
+    b.pendown()
+    b.forward(600)
+    b.left(90)
+    b.forward(400)
+    b.left(90)
+    b.forward(600)
+    b.left(90)
+    b.forward(400)
+    b.left(90)
+
+def france():
+    outline()
+    b.fillcolor('blue')
+    b.begin_fill()
+    for i in range(1):
+        b.forward(200)
+        b.left(90)
+        b.forward(400)
+        b.left(90)
+        b.forward(200)
+        b.end_fill()
+    b.pencolor("black")
+    b.left(180)
+    b.forward(400)
+    b.begin_fill()
+    b.fillcolor('red')
+    for i in range(1):
+        b.forward(200)
+        b.right(90)
+        b.forward(400)
+        b.right(90)
+        b.forward(200)
+        b.right(90)
+        b.forward(400)
+    b.end_fill()
+    b.right(180)
+    b.forward(400)
+    b.right(90)
+    b.forward(400)
+    b.right(90)
+    b.forward(400)
+    b.fillcolor('black')
+    
+
+def ireland():
+    outline()
+    b.fillcolor('forest green')
+    b.begin_fill()
+    for i in range(1):
+        b.forward(200)
+        b.left(90)
+        b.forward(400)
+        b.left(90)
+        b.forward(200)
+        b.end_fill()
+    b.pencolor("black")
+    b.left(180)
+    b.forward(400)
+    b.begin_fill()
+    b.fillcolor('dark orange')
+    for i in range(1):
+        b.forward(200)
+        b.right(90)
+        b.forward(400)
+        b.right(90)
+        b.forward(200)
+        b.right(90)
+        b.forward(400)
+    b.end_fill()
+    b.right(180)
+    b.forward(400)
+    b.right(90)
+    b.forward(400)
+    b.right(90)
+    b.forward(400)
+    b.fillcolor('black')
+
+def italy():
+    outline()
+    b.fillcolor('forest green')
+    b.begin_fill()
+    for i in range(1):
+        b.forward(200)
+        b.left(90)
+        b.forward(400)
+        b.left(90)
+        b.forward(200)
+        b.end_fill()
+    b.pencolor("black")
+    b.left(180)
+    b.forward(400)
+    b.begin_fill()
+    b.fillcolor('firebrick')
+    for i in range(1):
+        b.forward(200)
+        b.right(90)
+        b.forward(400)
+        b.right(90)
+        b.forward(200)
+        b.right(90)
+        b.forward(400)
+    b.end_fill()
+    b.right(180)
+    b.forward(400)
+    b.right(90)
+    b.forward(400)
+    b.right(90)
+    b.forward(400)
+    b.fillcolor('black')
+
+def germany():
+    outline()
+    b.left(90)
+    b.forward(133)
+    b.right(90)
+    b.forward(600)
+    b.left(90)
+    b.forward(133)
+    b.left(90)
+    b.forward(600)
+    b.right(180)
+    b.fillcolor('black')
+    b.begin_fill()
+    for i in range(1):
+        b.forward(600)
+        b.left(90)
+        b.forward(133)
+        b.left(90)
+        b.forward(600)
+        b.end_fill()
+    b.end_fill()
+    b.left(90)
+    b.forward(133)
+    b.left(90)
+    b.fillcolor('red')
+    b.begin_fill()
+    for i in range(1):
+        b.forward(600)
+        b.right(90)
+        b.forward(133)
+        b.right(90)
+        b.forward(600)
+        b.end_fill()
+    b.left(90)
+    b.fillcolor('yellow')
+    b.begin_fill()
+    for i in range(1):
+        b.forward(133)
+        b.left(90)
+        b.forward(600)
+        b.left(90)
+        b.forward(133)
+        b.end_fill()
+    b.left(90)
+    b.forward(600)
+    b.right(90)
+    b.forward(266)
+    b.fillcolor('black')
+
+def netherlands():
+    outline()
+    b.left(90)
+    b.forward(133)
+    b.right(90)
+    b.forward(600)
+    b.left(90)
+    b.forward(133)
+    b.left(90)
+    b.forward(600)
+    b.right(180)
+    b.fillcolor('red')
+    b.begin_fill()
+    for i in range(1):
+        b.forward(600)
+        b.left(90)
+        b.forward(133)
+        b.left(90)
+        b.forward(600)
+        b.end_fill()
+    b.end_fill()
+    b.left(90)
+    b.forward(133)
+    b.left(90)
+    b.fillcolor('white')
+    b.begin_fill()
+    for i in range(1):
+        b.forward(600)
+        b.right(90)
+        b.forward(133)
+        b.right(90)
+        b.forward(600)
+        b.end_fill()
+    b.left(90)
+    b.fillcolor('blue')
+    b.begin_fill()
+    for i in range(1):
+        b.forward(133)
+        b.left(90)
+        b.forward(600)
+        b.left(90)
+        b.forward(133)
+        b.end_fill()
+    b.left(90)
+    b.forward(600)
+    b.right(90)
+    b.forward(266)
+    b.fillcolor('black')
+
+def USAoutline():
+    b.penup()
+    b.goto(-300,-200)
+    b.pendown()
+    b.forward(620)
+    b.left(90)
+    b.forward(390)
+    b.left(90)
+    b.forward(620)
+    b.left(90)
+    b.forward(390)
+    b.left(90)
+
+def USAStripes():
+    for i in range(6):
+        b.fillcolor('#DC143C')
+        b.begin_fill()
+        b.penup()
+        b.forward(620)
+        b.left(90)
+        b.pendown()
+        b.forward(30)
+        b.left(90)
+        b.penup()
+        b.forward(620)
+        b.right(90)
+        b.pendown()
+        b.forward(30)
+        b.right(90)
+        b.end_fill()
+
+    b.fillcolor('#DC143C')
+    b.begin_fill()
+    b.penup()
+    b.forward(620)
+    b.left(90)
+    b.pendown()
+    b.forward(30)
+    b.left(90)
+    b.penup()
+    b.forward(620)
+    b.end_fill()
+
+        
+
+
+def USARectangle():
+    b.left(90)
+    for i in range(1):
+        b.fillcolor('medium blue')
+        b.begin_fill()
+        b.forward(210)
+        b.left(90)
+        b.forward(260)
+        b.left(90)
+        b.forward(210)
+        b.end_fill()
+
+def USAStar():
+    for i in range(5):
+            b.forward(20)
+            b.right(144)
+
+
+def USAStars():
+    b.left(90)
+    b.forward(260)
+    b.left(90)
+    b.forward(10)
+    b.left(90)
+    
+    b.fillcolor('white')
+    b.begin_fill()
+    b.penup()
+    for i in range(6):
+        b.forward(32)
+        USAStar()
+    b.end_fill()
+
+    b.goto(-300,190)
+    b.right(90)
+    b.forward(35)
+    b.left(90)
+
+    b.fillcolor('white')
+    b.begin_fill()
+    b.penup()
+    for i in range(5):
+        b.forward(32)
+        USAStar()
+    b.end_fill()
+    
+    b.goto(-300,190)
+    b.right(90)
+    b.forward(65)
+    b.left(90)
+    b.fillcolor('white')
+    b.begin_fill()
+    for i in range(6):
+        b.forward(32)
+        USAStar()
+    b.end_fill()
+
+def USA():
+    USAoutline()
+    USAStripes()
+    USARectangle()
+    USAStars()
+
+
+flaginput = input("What flag would you like to draw, name it by the country      ")
+
+
+if flaginput == "france":
+    france()
+
+elif flaginput == "ireland":
+    ireland()
+
+elif flaginput == "italy":
+    italy()
+
+elif flaginput == "germany":
+    germany()
+
+elif flaginput == "netherlands":
+    netherlands()
+
+elif flaginput == "belgium":
+    belgium()
+
+elif flaginput == "USA":
+    USA()
+
+elif flaginput != "france" or "ireland" or "italy" or "germany" or "netherlands" or "belgium" or "USA":
+    print("that is not a valid option, restart")    
